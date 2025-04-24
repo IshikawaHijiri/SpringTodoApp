@@ -1,0 +1,5 @@
+- 依存ライブラリ
+  - postgreSQL jdbcドライバ
+  - thymeleaf
+  - Spring Web
+  - (Spring Dev Tool)
