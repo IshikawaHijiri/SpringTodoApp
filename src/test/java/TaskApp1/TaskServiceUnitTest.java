@@ -20,7 +20,7 @@ public class TaskServiceUnitTest {
 
         Task task = new Task();
         task.setTitle("Unit Test Task");
-        //task.setCompleted(false);
+        
         when(mockRepo.findAll()).thenReturn(List.of(task));
 
         List<Task> result = taskService.getAllTasks();
@@ -36,8 +36,7 @@ public class TaskServiceUnitTest {
 
         Task task = new Task();
         task.setTitle("Create Task");
-        //task.setCompleted(false);
-
+        
         when(mockRepo.save(task)).thenReturn(task);
 
         Task result = taskService.createTask(task);
