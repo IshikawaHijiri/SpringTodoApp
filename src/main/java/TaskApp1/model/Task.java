@@ -13,7 +13,6 @@ public class Task {
     private Long id;
 
     private String title;
-    private boolean completed;
 
  // --- Getter ---
     public Long getId() {
@@ -24,10 +23,6 @@ public class Task {
         return title;
     }
 
-    public boolean isCompleted() {
-        return completed;
-    }
-
     // --- Setter ---
     public void setId(Long id) {
         this.id = id;
@@ -35,9 +30,5 @@ public class Task {
 
     public void setTitle(String title) {
         this.title = title;
-    }
-
-    public void setCompleted(boolean completed) {
-        this.completed = completed;
     }
 }

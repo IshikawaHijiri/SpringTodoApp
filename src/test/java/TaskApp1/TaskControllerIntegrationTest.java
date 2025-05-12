@@ -29,7 +29,7 @@ public class TaskControllerIntegrationTest {
     public void testListTasks() throws Exception {
         Task task = new Task();
         task.setTitle("Integration Task");
-        task.setCompleted(false);
+        //task.setCompleted(false);
 
         when(taskService.getAllTasks()).thenReturn(List.of(task));
 
